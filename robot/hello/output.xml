@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200729 19:54:29.080" rpa="false">
+<suite id="s1" name="Test" source="c:\qaninja\robot\test.robot">
+<test id="s1-t1" name="Deve retornar mensagem de boas vindas">
+<kw name="Welcone" library="app">
+<arguments>
+<arg>Hugo</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200729 19:54:29.131" level="INFO">${result} = Olá Hugo, Bem vindo!</msg>
+<status status="PASS" starttime="20200729 19:54:29.131" endtime="20200729 19:54:29.131"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>Olá Hugo, Bem vindo!</arg>
+</arguments>
+<status status="PASS" starttime="20200729 19:54:29.132" endtime="20200729 19:54:29.133"></status>
+</kw>
+<status status="PASS" starttime="20200729 19:54:29.130" endtime="20200729 19:54:29.133" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200729 19:54:29.082" endtime="20200729 19:54:29.137"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
